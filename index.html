@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal — TARS Hermes</title>
+<style>
+  :root { --ink:#111; --muted:#555; --line:#e5e5e5; --accent:#1a56db; --card:#fafafa; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:64px 22px 96px; }
+  h1 { font-size:30px; line-height:1.2; margin:0 0 8px; letter-spacing:-.02em; }
+  .sub { color:var(--muted); font-size:15px; margin:0 0 34px; max-width:56ch; }
+  .grid { display:grid; gap:14px; grid-template-columns:1fr 1fr; }
+  @media (max-width:560px){ .grid { grid-template-columns:1fr; } }
+  a.card { display:block; border:1px solid var(--line); border-radius:10px; padding:18px 20px; text-decoration:none; color:inherit; background:var(--card); transition:border-color .15s ease, transform .15s ease; }
+  a.card:hover { border-color:var(--accent); transform:translateY(-1px); }
+  .card h2 { font-size:17px; margin:0 0 4px; }
+  .card p { margin:0; color:var(--muted); font-size:14px; }
+  .facts { margin:34px 0 0; border-top:1px solid var(--line); }
+  .fact { display:flex; gap:14px; padding:11px 0; border-bottom:1px solid var(--line); font-size:15px; }
+  .fact b { min-width:132px; color:var(--muted); font-weight:600; }
+  footer { margin-top:36px; color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>TARS Hermes — Legal</h1>
+  <p class="sub">TARS Hermes is a private, single-user automation tool that runs on its operator's
+  own computer and connects to that person's own Google Account. These pages exist because
+  Google's OAuth policy requires a published privacy policy for apps requesting access to Gmail,
+  Calendar and Drive.</p>
+
+  <div class="grid">
+    <a class="card" href="./privacy.html">
+      <h2>Privacy Policy</h2>
+      <p>What data is accessed, where it is stored, and how to revoke access.</p>
+    </a>
+    <a class="card" href="./terms.html">
+      <h2>Terms of Service</h2>
+      <p>Personal use only, provided as-is, governed by Malaysian law.</p>
+    </a>
+  </div>
+
+  <div class="facts">
+    <div class="fact"><b>Application</b><span>TARS Hermes (personal build of Hermes Agent)</span></div>
+    <div class="fact"><b>Operator</b><span>Adam Ismail bin Erymuzuan — individual</span></div>
+    <div class="fact"><b>Users</b><span>1 (the operator)</span></div>
+    <div class="fact"><b>Data location</b><span>Local device only — no hosted backend</span></div>
+    <div class="fact"><b>Contact</b><span><a href="mailto:adam.erymuzuan@gmail.com">adam.erymuzuan@gmail.com</a></span></div>
+    <div class="fact"><b>Effective</b><span>7 November 2026</span></div>
+  </div>
+
+  <footer>
+    Not a commercial service. No accounts, no sign-up, no third-party access.
+  </footer>
+</main>
+</body>
+</html>

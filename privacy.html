@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TARS Hermes</title>
+<style>
+  :root { --ink:#111; --muted:#555; --line:#e5e5e5; --accent:#1a56db; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:56px 22px 96px; }
+  h1 { font-size:30px; line-height:1.2; margin:0 0 6px; letter-spacing:-.02em; }
+  .sub { color:var(--muted); font-size:14px; margin:0 0 34px; }
+  h2 { font-size:18px; margin:34px 0 10px; letter-spacing:-.01em; }
+  p, li { color:#222; }
+  ul { padding-left:22px; }
+  li { margin:6px 0; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-weight:600; color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.04em; }
+  a { color:var(--accent); }
+  .note { border-left:3px solid var(--accent); background:#f6f8ff; padding:12px 16px; margin:22px 0; font-size:15px; }
+  footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">TARS Hermes (personal application) &middot; Effective 7 November 2026</p>
+
+  <p>This policy explains what happens to data when the <strong>TARS Hermes</strong> application
+  (the "App") is authorised to access a Google Account. The App is a <strong>private,
+  single-user tool</strong> built and operated by one individual for their own use. It is not
+  offered to the public and has no other users.</p>
+
+  <div class="note">
+    <strong>In one line:</strong> the App reads and writes only the operator's own Google data,
+    stores everything on that person's own computer, and shares it with nobody.
+  </div>
+
+  <h2>1. Who operates this App</h2>
+  <table>
+    <tr><th>Operator</th><td>Adam Ismail bin Erymuzuan (individual, not a company)</td></tr>
+    <tr><th>Location</th><td>Petaling Jaya, Selangor, Malaysia</td></tr>
+    <tr><th>Contact</th><td><a href="mailto:adam.erymuzuan@gmail.com">adam.erymuzuan@gmail.com</a></td></tr>
+    <tr><th>Users</th><td>One: the operator. No third party is granted access.</td></tr>
+  </table>
+
+  <h2>2. What data the App accesses</h2>
+  <p>Only after the account owner grants consent, and only for the scopes they approve:</p>
+  <table>
+    <tr><th>Google service</th><th>What is accessed</th><th>Why</th></tr>
+    <tr><td>Gmail</td><td>Read message metadata and bodies; compose/send on request; apply labels</td><td>Summarise the inbox, draft and send replies the owner explicitly asks for</td></tr>
+    <tr><td>Calendar</td><td>Read events; create/delete events on request</td><td>Produce daily briefings and schedule items the owner requests</td></tr>
+    <tr><td>Drive</td><td>Search, read, upload, download files</td><td>File handling the owner requests</td></tr>
+    <tr><td>Sheets / Docs</td><td>Read and write spreadsheets and documents</td><td>Data entry and document drafting the owner requests</td></tr>
+    <tr><td>Contacts</td><td>Read contact names, emails, phone numbers</td><td>Resolve who an email or event relates to</td></tr>
+  </table>
+
+  <h2>3. Where data is stored</h2>
+  <ul>
+    <li><strong>Locally, on the operator's own computer.</strong> No application server, cloud database or hosted backend exists for this App.</li>
+    <li>An OAuth refresh token is stored in a local file
+      (<code>google_token.json</code>) readable only by the operator's user account.</li>
+    <li>Working data (summaries, drafts, logs) is written to local files and a local SQLite database
+      on the same machine.</li>
+    <li>Nothing is uploaded to any infrastructure controlled by the operator beyond the user's own device.</li>
+  </ul>
+
+  <h2>4. Sharing and third parties</h2>
+  <ul>
+    <li><strong>No sale, rental or sharing</strong> of Google user data with advertisers, data brokers or any third party.</li>
+    <li>Requests are sent directly from the operator's computer to Google's APIs. The only other recipients of content are the AI model providers the operator has configured, and only for the text needed to complete a request the owner asked for. These providers are used under their own API terms and do not receive Google account credentials.</li>
+    <li>Google user data is <strong>not used to train or improve</strong> any generalised or non-personalised AI/ML model by the operator.</li>
+    <li>No human other than the operator reads the data.</li>
+  </ul>
+
+  <h2>5. Retention and deletion</h2>
+  <ul>
+    <li>Data stays on the device until the operator deletes it — per-item deletion is available at any time.</li>
+    <li><strong>Revoking access:</strong> visit
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+      and remove <em>TARS hermes</em>. Access stops immediately; the stored token becomes useless.</li>
+    <li>Deleting <code>google_token.json</code> and the local data directory removes all retained data.</li>
+  </ul>
+
+  <h2>6. Security</h2>
+  <ul>
+    <li>Transport to Google uses HTTPS only.</li>
+    <li>The OAuth token is stored on a single device, protected by the operating system account and full-disk encryption where enabled.</li>
+    <li>The operator's Google Account is protected with two-factor authentication.</li>
+    <li>No credential is transmitted to, or stored by, any third party.</li>
+  </ul>
+
+  <h2>7. Limited Use statement</h2>
+  <p>The App's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the <strong>Limited Use</strong> requirements.</p>
+
+  <h2>8. Children</h2>
+  <p>The App is not directed at children and is not used by anyone other than its single adult operator.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes materially, the effective date above is updated and the change is
+  published on this page. Continued use after a change means acceptance of the revised policy.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions or deletion requests:
+  <a href="mailto:adam.erymuzuan@gmail.com">adam.erymuzuan@gmail.com</a></p>
+
+  <footer>
+    TARS Hermes is an unverified personal-use application. Google shows an "unverified app"
+    warning during sign-in; that is expected for a single-user tool.
+    &nbsp;·&nbsp; <a href="./terms.html">Terms of Service</a>
+    &nbsp;·&nbsp; <a href="./">Home</a>
+  </footer>
+</main>
+</body>
+</html>
